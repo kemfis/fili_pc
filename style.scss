@@ -35,7 +35,7 @@
     }
     .wrapper{
         width: 100%;
-        min-height: 100%;
+        min-height: 100vh;
         background-color: black;
         position: relative;
         
@@ -519,6 +519,9 @@
     } 
     
     @media screen and (max-width: 1208px){
+        .wrapper{
+            width: 100vw;
+            height: 100%;
             .container{
                 width: 768px;
                 .wrapper__bg-one{
@@ -769,6 +772,8 @@
                     }
                 }
             }
+        }
+            
         
         
 
@@ -776,331 +781,335 @@
 
     @media screen and (max-width: 600px){
         .container{
-            width: 375px;
-            .wrapper__bg-one{
-                position: absolute;
-                max-width: 400px;
-                z-index: 1;
-                padding-top: 120px;
-                filter: grayscale(0.7);
-                filter: saturate(0.7);
-                overflow: hidden;
-            }
-            .wrapper__bg-two{
-                width: 375px;
-            }
-            .wrapper__bg-three{
-                .wrapper__bg-three-one{
-                    margin-top: -250px;
-                }
-            }
-            header{
-                max-width: 331px;
-                .header__container{   
-                    .header__logo{
-                        width: 88px;  
-                        .logo__name{
-                            font-size: 24px;
-                        }  
-                        .logo__text{
-                            margin-top: 0px;
-                            font-size: 12px;
-                            line-height: 0%;
-                        }
-                    }
-                    .header__nav{
-                        width: 179px;
-                        .nav__conditions{
-                            display: none;
-                        }
-                        .nav__complexion{
-                            display: none;
-                        }
-                        .nav__button{
-                            width: 179px;
-                        }
-                    }
-                    
-                }
+            .wrapper{
                 
-            }
-            main{
-                .pay{
+                    width: 375px;
+                .wrapper__bg-one{
+                    position: absolute;
+                    max-width: 400px;
+                    z-index: 1;
+                    padding-top: 120px;
+                    filter: grayscale(0.7);
+                    filter: saturate(0.7);
+                    overflow: hidden;
+                }
+                .wrapper__bg-two{
+                    width: 375px;
+                }
+                .wrapper__bg-three{
+                    .wrapper__bg-three-one{
+                        margin-top: -250px;
+                    }
+                }
+                header{
                     max-width: 331px;
-                    display: inline;
-                    .pay__info{
-                        .info__title{
-                            font-size: 35px;
-                            width: 305px;
-                            line-height: 40px;
-                            height: 105px;
-                        }
-                        .info__text{
-                            font-size: 16px;
-                            width: 264px;
-                            margin-top: 20px;
-                            height: 36px;
-                        }
-                        .info__button{
-                            width: 206px;
-                            height: 50px;
-                            font-size: 14px;
-                            margin-top: 35px;
-                        }
-                    }
-                    .img__pay{
-                        width: 215px;
-                        height: 215px;
-                        margin-top: -10px;
-                        margin-left: 120px;
-                    }
-                }
-                .stages{
-                    max-width: 330px;  
-                    .stages__title{
-                        font-size: 24px;
-                        line-height: 28px;
-                        max-height: 48px;
-                        span{
-                            color: black;
-                            -webkit-text-stroke: 1px #FFFFFF;
-                            margin-right: 10px;
-                        }
-                    }   
-                   
-                    .stages__text{
-                        font-family: 'Inter Regular';
-                        margin-top: 20px;
-                        padding: 0px;
-                        max-width: 330px;
-                        font-size: 12px;
-                    }
-                }
-                .info{
-                    margin-top: 34px;
-                    max-width: 330px;
-                    display: flex;
-                    flex-direction: column;
-                    .info__grid{
-                        padding-top: 30px;
-                        padding-left: 25px;
-                    }
-                    .info__selection{
-                        height: 187px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    .info__application{
-                        width: 330px;
-                        height: 100px;
-                        display: flex;
-                        flex-direction: column;
-                        margin-left: 0px;
-                        .application__description{
-                            margin-top: 26px;
-                            padding-left: 15px;
-                           
-                        }
-                    }
-                    .info__selection{
-                        .selection__description{
-                            margin-left: 0px;
-                            margin-top: 16px;
-                            .selection__img{
-                                width: 275px;
-                                height: 134px;
-                                margin-top: 16px;
+                    .header__container{   
+                        .header__logo{
+                            width: 88px;  
+                            .logo__name{
+                                font-size: 24px;
+                            }  
+                            .logo__text{
+                                margin-top: 0px;
+                                font-size: 12px;
+                                line-height: 0%;
                             }
                         }
-                    }
-                    
-                    .num{
-                        font-size: 24px; 
-                        width: 30px;    
-                        height: 24px;  
-                        padding: 0px;         
-                    }
-                    .description__title{
-                        font-size: 16px;
-                        margin-top: -15px;
-                        width: 177px;
-                    }
-                    .description__text{
-                        font-size: 14px;
-                        margin-top: 10px;
-                        line-height: 15px;
-                        width: 275px;
-                    }
-                    .info__payment{
-                        height: 56px;
-                        display: flex;
-                        flex-direction: column;
-                        .payment__description{
-                            width: 464px;
-                            height: 74px;
-                            margin-top: 28px;
-                            margin-left: 0px;
-                        }
-                    }
-                    
-                    .info__production{
-                        display: flex;
-                        flex-direction: column;
-                        width: 330px;
-                        height: 100px;
-                        .production__description{
-                            margin-top: 25px;
-                            margin-left: -48px;
-                            .description__text-media{
-                                width: 275px;
+                        .header__nav{
+                            width: 179px;
+                            .nav__conditions{
+                                display: none;
                             }
-                        }
-                    }
-                    .info__test{
-                        display: flex;
-                        flex-direction: column;
-                        width: 495px;
-                        height: 60px;
-                        margin-left: 0px;
-                        .test__description{
-                            margin-top: 28px;
-                            margin-left: -48px;
-                        }
-                    }
-                    .info__delivery{
-                        display: flex;
-                        flex-direction: column;
-                        height: 60px;
-                        .delivery__description{
-                            margin-top: 28px;
-                            margin-left: -48px;
-                        }
-                    }
-                    .info__guarantee{
-                        display: flex;
-                        flex-direction: column;
-                        height: 60px;
-                        .guarantee__description{
-                            margin-top: 28px;
-                            margin-left: -48px;
-                        }
-                    }
-                }
-                .video__pc{
-                    max-width: 375px; 
-                    max-height: 900px;
-                    margin-top: -400px;
-                }
-                .variants{
-                    display: flex;
-                    max-width: 375px;
-                    flex-direction: column;
-                    align-items: center;
-                    .variants__speed{
-                        margin: 28px 0px 0px 0px;
-                        width: 243px;
-                        .speed__logo{
-                            width: 159px;
-                            width: 159px;
-                            margin: auto;
-                        }
-                        .speed__title{
-                            font-size: 32px;
-                            margin-top: -40px;
-                        }
-                        .speed__text{
-                            font-size: 12px;
-                        }
-                    }
-                    .variants__equipment{
-                        margin-top: 40px;
-                        display: flex;
-                        flex-direction: column;
-                        .one__img{
-                            width: 289px;
-                        }
-                        .one__title{
-                            font-size: 28px;
-                        }
-                        .one__text{
-                            font-size: 12px;
-                        }
-                        .one__parameters{
-                            font-size: 20px;
-                        }
-                        .one__price{
-                            font-size: 24px;
-                        }
-                    }
-                }
-                .form{
-                    max-width: 375px;
-                    .form__title{
-                        font-size: 24px;
-                        width: 330px;
-                        margin-top: -110px;
-                    }
-                    .form__form{
-                        .form__application{
-                            max-width: 326px;
-                            .form__radio{
-                                display: flex;
-                                flex-direction: column;       
+                            .nav__complexion{
+                                display: none;
                             }
-                            .form__text{
-                                width: 326px;
-                                font-size: 14px;
-                            }
-                            .form__style{
-                                width: 326px;
-                            }
-                            .form__button{
-                                width: 326px;
-                                font-size: 16px;
+                            .nav__button{
+                                width: 179px;
                             }
                         }
                         
                     }
                     
                 }
-            }
-            footer{
-                max-width: 375px;
-                margin-top: 204px;
-                
-                margin-bottom: 60px;
-                .footer{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0;
-                    margin-left: 30px;
-                    .footer__adress{
-                        max-width: 237px;
-                        font-size: 12px;
-                    }
-                    .footer__logo{
-                        margin-top: 61px;
-                        text-align: left;
-                        width: 80px;
-                        height: 60px;
-                        .logo__name{
-                            font-size: 24px;
-                            width: 80px;
-                            line-height: 32.5px;
+                main{
+                    .pay{
+                        max-width: 331px;
+                        display: inline;
+                        .pay__info{
+                            .info__title{
+                                font-size: 35px;
+                                width: 305px;
+                                line-height: 40px;
+                                height: 105px;
+                            }
+                            .info__text{
+                                font-size: 16px;
+                                width: 264px;
+                                margin-top: 20px;
+                                height: 36px;
+                            }
+                            .info__button{
+                                width: 206px;
+                                height: 50px;
+                                font-size: 14px;
+                                margin-top: 35px;
+                            }
                         }
-                        .logo__text{
+                        .img__pay{
+                            width: 215px;
+                            height: 215px;
+                            margin-top: -10px;
+                            margin-left: 120px;
+                        }
+                    }
+                    .stages{
+                        max-width: 330px;  
+                        .stages__title{
+                            font-size: 24px;
+                            line-height: 28px;
+                            max-height: 48px;
+                            span{
+                                color: black;
+                                -webkit-text-stroke: 1px #FFFFFF;
+                                margin-right: 10px;
+                            }
+                        }   
+                    
+                        .stages__text{
+                            font-family: 'Inter Regular';
+                            margin-top: 20px;
+                            padding: 0px;
+                            max-width: 330px;
                             font-size: 12px;
-                            margin: 0;
-                            padding: 0;
-                            line-height: 0px;
-                            text-align: left;
-                            width: 88px;
-                            height: 13px;
+                        }
+                    }
+                    .info{
+                        margin-top: 34px;
+                        max-width: 330px;
+                        display: flex;
+                        flex-direction: column;
+                        .info__grid{
+                            padding-top: 30px;
+                            padding-left: 25px;
+                        }
+                        .info__selection{
+                            height: 187px;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        .info__application{
+                            width: 330px;
+                            height: 100px;
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 0px;
+                            .application__description{
+                                margin-top: 26px;
+                                padding-left: 15px;
                             
+                            }
+                        }
+                        .info__selection{
+                            .selection__description{
+                                margin-left: 0px;
+                                margin-top: 16px;
+                                .selection__img{
+                                    width: 275px;
+                                    height: 134px;
+                                    margin-top: 16px;
+                                }
+                            }
+                        }
+                        
+                        .num{
+                            font-size: 24px; 
+                            width: 30px;    
+                            height: 24px;  
+                            padding: 0px;         
+                        }
+                        .description__title{
+                            font-size: 16px;
+                            margin-top: -15px;
+                            width: 177px;
+                        }
+                        .description__text{
+                            font-size: 14px;
+                            margin-top: 10px;
+                            line-height: 15px;
+                            width: 275px;
+                        }
+                        .info__payment{
+                            height: 56px;
+                            display: flex;
+                            flex-direction: column;
+                            .payment__description{
+                                width: 464px;
+                                height: 74px;
+                                margin-top: 28px;
+                                margin-left: 0px;
+                            }
+                        }
+                        
+                        .info__production{
+                            display: flex;
+                            flex-direction: column;
+                            width: 330px;
+                            height: 100px;
+                            .production__description{
+                                margin-top: 25px;
+                                margin-left: -48px;
+                                .description__text-media{
+                                    width: 275px;
+                                }
+                            }
+                        }
+                        .info__test{
+                            display: flex;
+                            flex-direction: column;
+                            width: 495px;
+                            height: 60px;
+                            margin-left: 0px;
+                            .test__description{
+                                margin-top: 28px;
+                                margin-left: -48px;
+                            }
+                        }
+                        .info__delivery{
+                            display: flex;
+                            flex-direction: column;
+                            height: 60px;
+                            .delivery__description{
+                                margin-top: 28px;
+                                margin-left: -48px;
+                            }
+                        }
+                        .info__guarantee{
+                            display: flex;
+                            flex-direction: column;
+                            height: 60px;
+                            .guarantee__description{
+                                margin-top: 28px;
+                                margin-left: -48px;
+                            }
+                        }
+                    }
+                    .video__pc{
+                        max-width: 375px; 
+                        max-height: 900px;
+                        margin-top: -400px;
+                    }
+                    .variants{
+                        display: flex;
+                        max-width: 375px;
+                        flex-direction: column;
+                        align-items: center;
+                        .variants__speed{
+                            margin: 28px 0px 0px 0px;
+                            width: 243px;
+                            .speed__logo{
+                                width: 159px;
+                                width: 159px;
+                                margin: auto;
+                            }
+                            .speed__title{
+                                font-size: 32px;
+                                margin-top: -40px;
+                            }
+                            .speed__text{
+                                font-size: 12px;
+                            }
+                        }
+                        .variants__equipment{
+                            margin-top: 40px;
+                            display: flex;
+                            flex-direction: column;
+                            .one__img{
+                                width: 289px;
+                            }
+                            .one__title{
+                                font-size: 28px;
+                            }
+                            .one__text{
+                                font-size: 12px;
+                            }
+                            .one__parameters{
+                                font-size: 20px;
+                            }
+                            .one__price{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                    .form{
+                        max-width: 375px;
+                        .form__title{
+                            font-size: 24px;
+                            width: 330px;
+                            margin-top: -110px;
+                        }
+                        .form__form{
+                            .form__application{
+                                max-width: 326px;
+                                .form__radio{
+                                    display: flex;
+                                    flex-direction: column;       
+                                }
+                                .form__text{
+                                    width: 326px;
+                                    font-size: 14px;
+                                }
+                                .form__style{
+                                    width: 326px;
+                                }
+                                .form__button{
+                                    width: 326px;
+                                    font-size: 16px;
+                                }
+                            }
+                            
+                        }
+                        
+                    }
+                }
+                footer{
+                    max-width: 375px;
+                    margin-top: 204px;
+                    
+                    margin-bottom: 60px;
+                    .footer{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0;
+                        margin-left: 30px;
+                        .footer__adress{
+                            max-width: 237px;
+                            font-size: 12px;
+                        }
+                        .footer__logo{
+                            margin-top: 61px;
+                            text-align: left;
+                            width: 80px;
+                            height: 60px;
+                            .logo__name{
+                                font-size: 24px;
+                                width: 80px;
+                                line-height: 32.5px;
+                            }
+                            .logo__text{
+                                font-size: 12px;
+                                margin: 0;
+                                padding: 0;
+                                line-height: 0px;
+                                text-align: left;
+                                width: 88px;
+                                height: 13px;
+                                
+                            }
                         }
                     }
                 }
             }
+            
         }
         
 
