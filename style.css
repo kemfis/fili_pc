@@ -26,6 +26,7 @@
   width: 100%;
   margin: 0%;
   padding: 0%;
+  overflow-x: hidden;
 }
 * a {
   text-decoration: none;
@@ -139,7 +140,7 @@
   text-align: center;
 }
 * .wrapper main {
-  max-width: 1216px;
+  max-width: 100%;
   color: white;
   margin-top: 142.5px;
   display: -webkit-box;
@@ -247,7 +248,7 @@
 * .wrapper main .info .num {
   font-family: "Inter Black";
   font-size: 96px;
-  width: 137px;
+  width: 216px;
   padding-left: 50px;
 }
 * .wrapper main .info .info__left {
@@ -337,6 +338,7 @@
   display: flex;
 }
 * .wrapper main .video {
+  width: 100%;
   margin-top: 80px;
 }
 * .wrapper main .variants {
@@ -850,10 +852,14 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .container .wrapper {
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .container {
     width: 375px;
   }
-  .container .wrapper .wrapper__bg-one {
+  .wrapper .container .wrapper__bg-one {
     position: absolute;
     max-width: 400px;
     z-index: 1;
@@ -864,87 +870,87 @@
             filter: saturate(0.7);
     overflow: hidden;
   }
-  .container .wrapper .wrapper__bg-two {
+  .wrapper .container .wrapper__bg-two {
     width: 375px;
   }
-  .container .wrapper .wrapper__bg-three .wrapper__bg-three-one {
+  .wrapper .container .wrapper__bg-three .wrapper__bg-three-one {
     margin-top: -250px;
   }
-  .container .wrapper header {
+  .wrapper .container header {
     max-width: 331px;
   }
-  .container .wrapper header .header__container .header__logo {
+  .wrapper .container header .header__container .header__logo {
     width: 88px;
   }
-  .container .wrapper header .header__container .header__logo .logo__name {
+  .wrapper .container header .header__container .header__logo .logo__name {
     font-size: 24px;
   }
-  .container .wrapper header .header__container .header__logo .logo__text {
+  .wrapper .container header .header__container .header__logo .logo__text {
     margin-top: 0px;
     font-size: 12px;
     line-height: 0%;
   }
-  .container .wrapper header .header__container .header__nav {
+  .wrapper .container header .header__container .header__nav {
     width: 179px;
   }
-  .container .wrapper header .header__container .header__nav .nav__conditions {
+  .wrapper .container header .header__container .header__nav .nav__conditions {
     display: none;
   }
-  .container .wrapper header .header__container .header__nav .nav__complexion {
+  .wrapper .container header .header__container .header__nav .nav__complexion {
     display: none;
   }
-  .container .wrapper header .header__container .header__nav .nav__button {
+  .wrapper .container header .header__container .header__nav .nav__button {
     width: 179px;
   }
-  .container .wrapper main .pay {
+  .wrapper .container main .pay {
     max-width: 331px;
     display: inline;
   }
-  .container .wrapper main .pay .pay__info .info__title {
+  .wrapper .container main .pay .pay__info .info__title {
     font-size: 35px;
     width: 305px;
     line-height: 40px;
     height: 105px;
   }
-  .container .wrapper main .pay .pay__info .info__text {
+  .wrapper .container main .pay .pay__info .info__text {
     font-size: 16px;
     width: 264px;
     margin-top: 20px;
     height: 36px;
   }
-  .container .wrapper main .pay .pay__info .info__button {
+  .wrapper .container main .pay .pay__info .info__button {
     width: 206px;
     height: 50px;
     font-size: 14px;
     margin-top: 35px;
   }
-  .container .wrapper main .pay .img__pay {
+  .wrapper .container main .pay .img__pay {
     width: 215px;
     height: 215px;
     margin-top: -10px;
     margin-left: 120px;
   }
-  .container .wrapper main .stages {
+  .wrapper .container main .stages {
     max-width: 330px;
   }
-  .container .wrapper main .stages .stages__title {
+  .wrapper .container main .stages .stages__title {
     font-size: 24px;
     line-height: 28px;
     max-height: 48px;
   }
-  .container .wrapper main .stages .stages__title span {
+  .wrapper .container main .stages .stages__title span {
     color: black;
     -webkit-text-stroke: 1px #FFFFFF;
     margin-right: 10px;
   }
-  .container .wrapper main .stages .stages__text {
+  .wrapper .container main .stages .stages__text {
     font-family: "Inter Regular";
     margin-top: 20px;
     padding: 0px;
     max-width: 330px;
     font-size: 12px;
   }
-  .container .wrapper main .info {
+  .wrapper .container main .info {
     margin-top: 34px;
     max-width: 330px;
     display: -webkit-box;
@@ -955,11 +961,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .wrapper main .info .info__grid {
+  .wrapper .container main .info .info__grid {
     padding-top: 30px;
     padding-left: 25px;
   }
-  .container .wrapper main .info .info__selection {
+  .wrapper .container main .info .info__selection {
     height: 187px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -969,7 +975,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .wrapper main .info .info__application {
+  .wrapper .container main .info .info__application {
     width: 330px;
     height: 100px;
     display: -webkit-box;
@@ -981,37 +987,37 @@
             flex-direction: column;
     margin-left: 0px;
   }
-  .container .wrapper main .info .info__application .application__description {
+  .wrapper .container main .info .info__application .application__description {
     margin-top: 26px;
     padding-left: 15px;
   }
-  .container .wrapper main .info .info__selection .selection__description {
+  .wrapper .container main .info .info__selection .selection__description {
     margin-left: 0px;
     margin-top: 16px;
   }
-  .container .wrapper main .info .info__selection .selection__description .selection__img {
+  .wrapper .container main .info .info__selection .selection__description .selection__img {
     width: 275px;
     height: 134px;
     margin-top: 16px;
   }
-  .container .wrapper main .info .num {
+  .wrapper .container main .info .num {
     font-size: 24px;
     width: 30px;
     height: 24px;
     padding: 0px;
   }
-  .container .wrapper main .info .description__title {
+  .wrapper .container main .info .description__title {
     font-size: 16px;
     margin-top: -15px;
     width: 177px;
   }
-  .container .wrapper main .info .description__text {
+  .wrapper .container main .info .description__text {
     font-size: 14px;
     margin-top: 10px;
     line-height: 15px;
     width: 275px;
   }
-  .container .wrapper main .info .info__payment {
+  .wrapper .container main .info .info__payment {
     height: 56px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1021,13 +1027,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .wrapper main .info .info__payment .payment__description {
+  .wrapper .container main .info .info__payment .payment__description {
     width: 464px;
     height: 74px;
     margin-top: 28px;
     margin-left: 0px;
   }
-  .container .wrapper main .info .info__production {
+  .wrapper .container main .info .info__production {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1038,14 +1044,14 @@
     width: 330px;
     height: 100px;
   }
-  .container .wrapper main .info .info__production .production__description {
+  .wrapper .container main .info .info__production .production__description {
     margin-top: 25px;
     margin-left: -48px;
   }
-  .container .wrapper main .info .info__production .production__description .description__text-media {
+  .wrapper .container main .info .info__production .production__description .description__text-media {
     width: 275px;
   }
-  .container .wrapper main .info .info__test {
+  .wrapper .container main .info .info__test {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1057,11 +1063,11 @@
     height: 60px;
     margin-left: 0px;
   }
-  .container .wrapper main .info .info__test .test__description {
+  .wrapper .container main .info .info__test .test__description {
     margin-top: 28px;
     margin-left: -48px;
   }
-  .container .wrapper main .info .info__delivery {
+  .wrapper .container main .info .info__delivery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1071,11 +1077,11 @@
             flex-direction: column;
     height: 60px;
   }
-  .container .wrapper main .info .info__delivery .delivery__description {
+  .wrapper .container main .info .info__delivery .delivery__description {
     margin-top: 28px;
     margin-left: -48px;
   }
-  .container .wrapper main .info .info__guarantee {
+  .wrapper .container main .info .info__guarantee {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1085,16 +1091,16 @@
             flex-direction: column;
     height: 60px;
   }
-  .container .wrapper main .info .info__guarantee .guarantee__description {
+  .wrapper .container main .info .info__guarantee .guarantee__description {
     margin-top: 28px;
     margin-left: -48px;
   }
-  .container .wrapper main .video__pc {
+  .wrapper .container main .video__pc {
     max-width: 375px;
     max-height: 900px;
     margin-top: -400px;
   }
-  .container .wrapper main .variants {
+  .wrapper .container main .variants {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1107,23 +1113,23 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .wrapper main .variants .variants__speed {
+  .wrapper .container main .variants .variants__speed {
     margin: 28px 0px 0px 0px;
     width: 243px;
   }
-  .container .wrapper main .variants .variants__speed .speed__logo {
+  .wrapper .container main .variants .variants__speed .speed__logo {
     width: 159px;
     width: 159px;
     margin: auto;
   }
-  .container .wrapper main .variants .variants__speed .speed__title {
+  .wrapper .container main .variants .variants__speed .speed__title {
     font-size: 32px;
     margin-top: -40px;
   }
-  .container .wrapper main .variants .variants__speed .speed__text {
+  .wrapper .container main .variants .variants__speed .speed__text {
     font-size: 12px;
   }
-  .container .wrapper main .variants .variants__equipment {
+  .wrapper .container main .variants .variants__equipment {
     margin-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1133,33 +1139,33 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .wrapper main .variants .variants__equipment .one__img {
+  .wrapper .container main .variants .variants__equipment .one__img {
     width: 289px;
   }
-  .container .wrapper main .variants .variants__equipment .one__title {
+  .wrapper .container main .variants .variants__equipment .one__title {
     font-size: 28px;
   }
-  .container .wrapper main .variants .variants__equipment .one__text {
+  .wrapper .container main .variants .variants__equipment .one__text {
     font-size: 12px;
   }
-  .container .wrapper main .variants .variants__equipment .one__parameters {
+  .wrapper .container main .variants .variants__equipment .one__parameters {
     font-size: 20px;
   }
-  .container .wrapper main .variants .variants__equipment .one__price {
+  .wrapper .container main .variants .variants__equipment .one__price {
     font-size: 24px;
   }
-  .container .wrapper main .form {
+  .wrapper .container main .form {
     max-width: 375px;
   }
-  .container .wrapper main .form .form__title {
+  .wrapper .container main .form .form__title {
     font-size: 24px;
     width: 330px;
     margin-top: -110px;
   }
-  .container .wrapper main .form .form__form .form__application {
+  .wrapper .container main .form .form__form .form__application {
     max-width: 326px;
   }
-  .container .wrapper main .form .form__form .form__application .form__radio {
+  .wrapper .container main .form .form__form .form__application .form__radio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1168,23 +1174,23 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .wrapper main .form .form__form .form__application .form__text {
+  .wrapper .container main .form .form__form .form__application .form__text {
     width: 326px;
     font-size: 14px;
   }
-  .container .wrapper main .form .form__form .form__application .form__style {
+  .wrapper .container main .form .form__form .form__application .form__style {
     width: 326px;
   }
-  .container .wrapper main .form .form__form .form__application .form__button {
+  .wrapper .container main .form .form__form .form__application .form__button {
     width: 326px;
     font-size: 16px;
   }
-  .container .wrapper footer {
+  .wrapper .container footer {
     max-width: 375px;
     margin-top: 204px;
     margin-bottom: 60px;
   }
-  .container .wrapper footer .footer {
+  .wrapper .container footer .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1195,22 +1201,22 @@
     padding: 0;
     margin-left: 30px;
   }
-  .container .wrapper footer .footer .footer__adress {
+  .wrapper .container footer .footer .footer__adress {
     max-width: 237px;
     font-size: 12px;
   }
-  .container .wrapper footer .footer .footer__logo {
+  .wrapper .container footer .footer .footer__logo {
     margin-top: 61px;
     text-align: left;
     width: 80px;
     height: 60px;
   }
-  .container .wrapper footer .footer .footer__logo .logo__name {
+  .wrapper .container footer .footer .footer__logo .logo__name {
     font-size: 24px;
     width: 80px;
     line-height: 32.5px;
   }
-  .container .wrapper footer .footer .footer__logo .logo__text {
+  .wrapper .container footer .footer .footer__logo .logo__text {
     font-size: 12px;
     margin: 0;
     padding: 0;

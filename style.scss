@@ -26,6 +26,7 @@
 *{  width: 100%;
     margin: 0%;
     padding: 0%;
+    overflow-x: hidden;
     a{
         text-decoration: none;
         color: white;
@@ -118,7 +119,7 @@
                 
             }
             main{
-                max-width: 1216px;
+                max-width: 100%;
                 color: white;
                 margin-top: 142.5px;
                 display: flex;
@@ -211,7 +212,7 @@
                     .num{
                         font-family: 'Inter Black';
                         font-size: 96px; 
-                        width: 137px;    
+                        width: 216px;    
                         padding-left: 50px;             
                     }
                     .info__left{
@@ -296,6 +297,7 @@
                     }
                 }
                 .video{
+                    width: 100%;
                     margin-top: 80px;
                     
                 }
@@ -780,9 +782,10 @@
     }
 
     @media screen and (max-width: 600px){
-        .container{
-            .wrapper{
-                
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            .container{ 
                     width: 375px;
                 .wrapper__bg-one{
                     position: absolute;
@@ -1111,8 +1114,5 @@
             }
             
         }
-        
-
-    }
-    
+    } 
 
